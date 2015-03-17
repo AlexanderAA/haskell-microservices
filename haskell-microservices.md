@@ -88,6 +88,35 @@ data Message = Message { mId      :: MId
 
 ---
 
+# Data.Aeson
+
+* "Aeson is a fast Haskell library for working with JSON data"
+
+. . .
+
+* https://hackage.haskell.org/package/aeson
+
+. . .
+
+### Modules
+
+* Data.Aeson
+    * Data.Aeson.Encode    <- encode JSON
+    * Data.Aeson.Parser    <- correctly parse JSON string (UTF)
+    * Data.Aeson.TH        <- derives ToJSON, FromJSON
+    * Data.Aeson.Types     <- data types
+
+---
+
+# Data.Aeson
+
+* Provides two typeclasses, ToJSON and FromJSON
+
+. . .
+
+* 
+
+---
 
 # Aeson conversions
 
@@ -125,6 +154,16 @@ prop_OptionJSON o = (((AE.decode . AE.encode) (Just o)) == (Just o))
 
 
 ## Questions?
+
+
+
+
+---
+
+# References
+
+http://silkapp.github.io/rest/tutorial.html
+
 
 
 
